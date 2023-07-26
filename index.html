@@ -15,6 +15,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- add favicon -->
     <link rel="shortcut icon" href="./images/apple.png" type="image/x-icon">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -22,8 +24,63 @@
     </style>
 </head>
 
-<body>
+<body class="font-lato">
     <header>
+        <nav
+            class="lg:flex lg:flex-row lg:justify-around lg:items-center lg:bg-[#F85559] md:bg-[#F85559] rounded-full flex  justify-around items-center mt-2 lg:ml-5 lg:mr-5 md:ml-5 md:mr-5 ">
+            <div class="hidden lg:flex">
+                <div>
+                    <ul class="lg:flex lg:justify-around lg:items-center gap-4 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div
+                class="md:flex md:justify-between md:items-center md:gap-x-96 flex items-center justify-between gap-x-60 ">
+                <div class="flex lg:justify-around lg:gap-3 items-center md:gap-80 gap-32  ">
+                    <div class="flex justify-center items-center lg:gap-3 md:gap-3 gap-2"><img src="./images/logo.png" alt="">
+                        <h2 class="lg:text-3xl lg:text-white md:text-white lg:font-semibold md:text-2xl md:font-bold lg:w-44 md:w-36 text-black text-2xl font-extrabold    ">Fruit Burst</h2></div>
+
+                    <div class="dropdown  lg:hidden ">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-5">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                            <li> <input type="text" placeholder="Search here"
+                                    class="lg:input lg:input-bordered lg:w-64 lg:h-10 md:w-auto lg:rounded-full border-none px-4" />
+                                <span class=""><i
+                                        class="fa-solid fa-magnifying-glass absolute right-4 bottom-3 "></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="lg:inline lg:form-control lg:relative hidden">
+                <input type="text" placeholder="Search here"
+                    class="lg:input lg:input-bordered lg:w-64 lg:h-10 md:w-auto lg:rounded-full border-none px-4" />
+                <span class=""><i class="fa-solid fa-magnifying-glass absolute right-4 bottom-3 text-slate-400 "></i></span>
+            </div>
+
+
+
+        </nav>
+
 
     </header>
     <main>
